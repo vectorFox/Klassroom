@@ -4,6 +4,7 @@ import getYoutubeVideoLinks as getYT
 import emailer as email
 import speech_recognition as sr
 from emailAnalysis import send_email
+import os
 
 # import summarizer as summ
 
@@ -167,5 +168,5 @@ def contactform():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 9988))
     app.run(host='0.0.0.0', port=port)
